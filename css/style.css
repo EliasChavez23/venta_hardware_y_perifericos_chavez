@@ -1,0 +1,496 @@
+/* inicio css index.html */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body{
+    font-family: "Montserrat",  sans-serif;
+    margin: 0px;
+    background-color: #9370d8;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5% ;
+    background-color: #70d893;
+    position: sticky;
+    top: 0px;
+}
+.logo{
+    width: 120px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px;
+
+}
+nav ul li{
+     display: inline-block;
+     padding: 0px 20px ;
+     font-size: 20px;
+}
+nav ul li:hover{
+    text-shadow: 1px 1px  #9370d8;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+.imagen--encabezado{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.texto--central{
+    text-align: center;
+    font: 180% "Montserrat";
+    font-weight: bold;
+}
+/* INICIO GRID IMAGENES MARCAS */
+.imagenes--marcas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px ;
+    justify-content: space-between;
+    grid-gap: 50px;
+}
+/* inicio css intel grid */
+.intel--logo{
+    width: 350px;
+    grid-area: "intel";
+    transition: 800ms;
+}
+.intel--logo:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 2px 2px 10px 10px  white;
+    transition: all 500ms;
+}
+.intel--galeria{
+    display: flex;
+    justify-content: center;
+}
+/* fin css intel grid */
+/* inicio css hyperx grid */
+.hyperx--logo{
+    width: 350px;
+    grid-area: "hyperx";
+    transition: 800ms;
+}
+.hyperx--logo:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 2px 2px 10px 10px white;
+    transition: all 500ms;
+}
+.hyperx--galeria{
+    display: flex;
+    justify-content: center;
+}
+/* fin css hyperx grid */
+/* inicio css amd grid */
+.amd--logo{
+    width: 350px;
+    height: 200px;
+    grid-area: "amd";
+    transition: 800ms;
+}
+.amd--logo:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 2px 2px 10px 10px white;
+    transition: all 500ms;
+}
+.amd--galeria{
+    display: flex;
+    justify-content: center;
+}
+/* fin css amd grid */
+/* incio css logitech grid */
+.logitech--logo{
+    width: 350px;
+    grid-area: "logitech";
+    transition: 800ms;
+}
+.logitech--logo:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 2px 2px 10px 10px white;
+    transition: all 500ms;
+}
+.logitech--galeria{
+    display: flex;
+    justify-content: center;
+}
+/* fin css logitech grid */
+/* incio css aorus grid */
+.aorus--logo{
+    width: 350px;
+    grid-area: "aorus";
+    transition: 800ms;
+}
+.aorus--logo:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 2px 2px 10px 10px white;
+    transition: all 500ms;
+}
+.aorus--galeria{
+    display: flex;
+    justify-content: center;
+}
+/* fin css aorus grid */
+/* incio css razer grid */
+.razer--logo{
+    width: 350px;
+    height: 200px;
+    grid-area: "razer";
+    transition: 800ms;
+}
+.razer--logo:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 2px 2px 10px 10px white;
+    transition: all 500ms;
+}
+.razer--galeria{
+    display: flex;
+    justify-content: center;
+}
+/* fin css razer grid */
+/* FIN GRID IMAGENES MARCAS */
+
+
+/* INCIO MEDIAS QUERIES RESPONSIVE */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    /* MEDIA QUERIE HOME.HTML */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 5% ;
+        background-color: #70d893;
+        position: sticky;
+        top: 0px;
+    }
+    .logo{
+        width: 50px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 0px 10px ;
+        font-size: 8.50px;
+    }
+    a{
+        text-decoration: none;
+        color: black
+    }
+    .imagenes--marcas{
+        grid-template-areas: 
+        "intel"
+        "hyperx"
+        "amd"
+        "logitech"
+        "aorus"
+        "razer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 15% 15% 15% 15% 15%;
+        justify-content: center;
+    }
+    .texto--mapa{
+        font: 150% "Montserrat";
+        text-align: center;
+    }
+    .mapa{
+        width: 150px;
+        border-style: double;
+        border-width: 5px;
+        border-color: #70d893;
+        margin-left: 20px;
+    }
+    .redes--encabezado{
+        font: 150% "Montserrat";
+        text-align: center;
+    }
+    .logo--footer{
+        width: 50%;
+        margin-left: 20px;
+    }
+    .imagenes--componentes{
+        grid-template-areas: 
+        "i3"
+        "i5"
+        "i7"
+        "i7"
+        "i9"
+        "i9";
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 15% 15% 15% 15% 15%;
+        justify-content: center;
+    }
+}
+/* FIN MEDIAS QUERIES RESPONSIVE */
+
+
+/* INICIO CSS FOOTER */
+.info--empresa{
+    font: 150% "Montserrat";
+    padding-top: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+.redes--sociales{
+    text-align: end;
+    padding-right: 50px;
+}
+.redes--encabezado{
+    font: 150% "Montserrat";
+}
+.instagram{
+    padding-right: 80px;
+}
+.facebook{
+    padding-right: 80px;
+}
+.youtube{
+    padding-left: 20px;
+}
+.mapa{
+    width: 330px;
+    height: 300px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #70d893;
+}
+.footer--copyright{
+    padding: 30px;
+    background-color: #70d893;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.logo--footer{
+    width: 130px;
+}
+.texto--copyright{
+    padding-left: 0px;
+}
+.mail--contacto{
+    font: 150% "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+.texto--mapa{
+    font: 150% "Montserrat";
+    margin-left: 5px;
+}
+/* FIN CSS FOOTER */
+/* CIERRE CSS INDEX.HTML */
+
+/* INICIO CSS COMPONENTES.HTML */
+.encabezado{
+    display: flex;
+    justify-content: space-evenly;
+}
+.textos--componentes{
+    padding: 30px;
+    margin-left: -60px;
+    border-style: double;
+    border-width: medium;
+    border-color: #70d893;
+}
+/* INICIO CSS PROCESADORES */
+.texto--procesadores{
+    font-size: 27px;
+    list-style: none;
+}
+.texto--intel{
+    font-size: 23px;
+    color: #70d893;
+}
+/* FIN CSS PROCESADORES */
+/* INICIO CSS PLACAS DE VIDEO */
+.texto--placasdevideo{
+    font-size: 27px;
+    list-style: none;      
+}
+/* FIN CSS PLACAS DE VIDEO */
+/* INICIO CSS MOTHERBOARDS */
+.texto--motherboards{
+    font-size: 27px;
+    list-style: none;
+}
+/* FIN CSS MOTHERBOARDS */
+/* INICIO CSS MEMORIAS RAM */
+.texto--memoriasram{
+    font-size: 27px;
+    list-style: none;
+}
+/* FIN CSS MEMORIAS RAM */
+/* INICIO CSS DISCOS SSD */
+.texto--discossd{
+    font-size: 27px;
+    list-style: none;
+}
+/* FIN CSS DISCOS SSD  */
+/* INICIO CSS DISCOS HDD */
+.texto--discoshdd{
+    font-size: 27px;
+    list-style: none;
+}
+/* FIN CSS DISCOS HDD */
+/* INICIO CSS FUENTES DE ALIMENTACIÓN */
+.texto--fuentesdealimentación{
+    font-size: 27px;
+    list-style: none;
+}
+/* FIN CSS FUENTES DE ALIMENTACIÓN  */
+/* INICIO CSS GABINETES */
+.texto--gabinetes{
+    font-size: 27px;
+    list-style: none;
+}
+/* FIN CSS GABINETES */
+/* INICIO GRID IMAGENES DE PRODUCTO SELECCIONADO */
+.imagenes--componentes{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 150px 150px 150px 150px;
+    gap: 50px;
+    padding: 30px;
+}
+.procesadori3--logo{
+    width: 140px;
+    grid-area: "i3";
+}
+.procesadori3--galeria{
+    display: flex;
+    justify-content: center;
+}
+.procesadori5--logo{
+    width: 140px;
+    height: 140px;
+    grid-area: "i5";
+}
+.procesadori5--galeria{
+    display: flex;
+    justify-content: center;
+}
+.procesadori7--logo{
+    width: 170px;
+    height: 140px;
+    grid-area: "i7";
+}
+.procesadori7--galeria{
+    display: flex;
+    justify-content: center;
+}
+.procesadori9--logo{
+    width: 180px;
+    height: 140px;
+    grid-area: "i9";
+}
+.procesadori9--galeria{
+    display: flex;
+    justify-content: center;
+}
+/* CIERRE GRID IMAGENES DE PRODUCTO SELECCIONADO */
+
+/* INICIO CSS QUIENES-SOMOS.HTML */
+.texto--titulo{
+    font: 160% "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    margin: 35px;
+}
+.texto--parrafo{
+    padding: 50px;
+    margin: 60px;
+    margin-bottom: 100px;
+}
+/* CIERRE CSS QUIENES-SOMOS.HTML */
+
+/* INICIO CSS PERIFERICOS.HTML  */
+.encabezado--perifericos{
+    display: flex;
+    justify-content: space-around;
+}
+.texto--perifericos{ 
+    padding: 50px;
+    margin-left: -80px;     
+}
+.texto--auriculares{
+    font-size: 29px;
+    list-style: none;
+}
+.texto--logitech{
+    font-size: 23px;
+    color: #70d893;
+}
+.texto--teclados{
+    font-size: 29px;
+    list-style: none;   
+}
+.texto--mouses{
+    font-size: 29px;
+    list-style: none;
+}
+.texto--parlantes{
+    font-size: 29px;
+    list-style: none;
+}
+.texto--microfonos{
+    font-size: 29px;
+    list-style: none;
+}
+.texto--mousepads{
+    font-size: 29px;
+    list-style: none;
+}
+.texto--webcams{
+    font-size: 29px;
+    list-style: none;
+}
+.texto--joysticks{
+    font-size: 29px;
+    list-style: none;
+}
+.auriculares--logitech{
+    width: 120px;
+    padding: 50px;
+    margin-left: -380px;
+}
+.auriculares--logitech2{
+    width: 120px;
+    padding: 50px;
+}
+
+/* FIN CSS PERIFERICOS.HTML */
+
+/*INICIO CSS CONTACTO.HTML  */
+.texto--formulario--titulo{
+    font: 160% "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    margin: 35px;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+.texto--apellido{
+    background-color: #70d893;
+}
+.texto--nombre{
+    background-color: #70d893;
+}
+.texto--mail{
+    background-color: #70d893;
+}
+.texto--edad{
+    background-color: #70d893;
+}
+.texto--problema{
+    background: #70d893;
+}
+
+/* FIN CSS CONTACTO.HTML */
