@@ -13,30 +13,51 @@ header{
     background-color: #70d893;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 .logo{
     width: 120px;
     margin-top: 0px;
     margin-left: 10px;
+    transition: 400ms;
+}
+.logo:hover{
+    transform: scale(2,2); 
+    transition: 700ms;
 }
 nav ul{
     display: flex;
     justify-content: flex-end;
     padding: 0px;
     margin: 0px;
-
 }
 nav ul li{
      display: inline-block;
-     padding: 0px 20px ;
+     padding: 0px 15px ;
      font-size: 20px;
-}
-nav ul li:hover{
-    text-shadow: 1px 1px  #9370d8;
 }
 a{
     text-decoration: none;
     color: black
+}
+a:hover{
+    color: black;
+    text-shadow: 1px 1px #9370d8;
+}
+.barra--busqueda{
+    color: black;
+    border-color:#9370d8 ;
+    padding: 5px;
+}
+.boton--buscar{
+    color: black;
+    border-color:#9370d8 ;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.boton--buscar:hover{
+    background-color: #70d893;
+    transition: 400ms;
 }
 .imagen--encabezado{
     width: 100%;
@@ -47,6 +68,7 @@ a{
     text-align: center;
     font: 180% "Montserrat";
     font-weight: bold;
+    padding: 30px;
 }
 /* INICIO GRID IMAGENES MARCAS */
 .imagenes--marcas{
@@ -243,6 +265,7 @@ a{
 }
 .redes--encabezado{
     font: 150% "Montserrat";
+    padding: 15px;
 }
 .instagram{
     padding-right: 80px;
@@ -254,24 +277,25 @@ a{
     padding-left: 20px;
 }
 .mapa{
-    width: 330px;
+    width: 400px;
     height: 300px;
     border-style: double;
     border-width: 5px;
     border-color: #70d893;
+    margin-left: 10px;
 }
 .footer--copyright{
-    padding: 30px;
     background-color: #70d893;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    margin-bottom: -50px;
 }
 .logo--footer{
-    width: 130px;
+    width: 100px;
+    margin-left: 400px;
+    margin-bottom: -65px;
 }
 .texto--copyright{
-    padding-left: 0px;
+    padding-left: 488px;
+    padding-bottom: 57px;
 }
 .mail--contacto{
     font: 150% "Montserrat";
@@ -290,6 +314,25 @@ a{
 .encabezado{
     display: flex;
     justify-content: space-evenly;
+}
+.card{
+    background-color: #70d893;
+}
+.btn-color{
+    color: #000;
+}
+.btn-color:hover{
+    text-shadow: 1px 1px #9370d8;
+}
+.card-body{
+    font-size: 14px;
+}
+.bg--cardbody{
+    background-color: #9ae3b3;
+}
+.col-sm-4{
+    padding-top: 40px;
+    padding-left: 25px;
 }
 .textos--componentes{
     padding: 30px;

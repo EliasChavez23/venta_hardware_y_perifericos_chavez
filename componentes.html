@@ -5,105 +5,244 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Componentes</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href=css/style.css> 
 </head>
 <body>
     <header>
+        <!-- logo -->
         <div>
             <a href="index.html">
                 <img class="logo" src="assets/IN_GAME-logo.png" alt="logo">
             </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">COMPONENTES</a></li>
-                <li><a href="perifericos.html">PERIFERICOS</a></li>
-                <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <!-- encabezado -->
+        <nav class="navbar navbar-expand-lg bg-#70d893">
+            <form class="d-flex">
+              <input class="form-control me-2 barra--busqueda" type="search" placeholder="Search" aria-label="Search">
+              <button class="boton--buscar btn-outline-success" type="submit">Buscar</button>
+            </form>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Componentes</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="perifericos.html">Perifericos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.hmtl">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 <main>
   <section class="encabezado">
-    <div>
-       <ul class="textos--componentes">
-         <li class="texto--procesadores">Procesadores</li>
-          <ul>
-              <li>AMD</li>
-              <li class="texto--intel">Intel</li>
-          </ul>
-         <li class="texto--placasdevideo">Placas de video</li>
-          <ul>
-              <li>GeForce</li>
-              <li>AMD</li>
-          </ul>
-         <li class="texto--motherboards">Motherboards</li>
-         <ul>
-             <li>Intel</li>
-             <li>AMD</li>
-         </ul>
-         <li class="texto--memoriasram">Memorias RAM</li>
-          <ul>
-              <li>Kingston FURY</li>
-              <li>Ballistix</li>
-              <li>Corsair</li>
-              <li>Crucial</li>
-          </ul>
-         <li class="texto--discossd">Discos SSD</li>
-          <ul>
-              <li>Gigabyte</li>
-              <li>Kingston</li>
-              <li>Western Digital</li>
-          </ul>
-         <li class="texto--discoshdd">Discos rigidos</li>
-         <ul>
-             <li>Western Digital</li>
-             <li>Seagate</li>
-             <li>Toshiba</li>
-         </ul>
-         <li class="texto--fuentesdealimentación">Fuentes de alimentación</li>
-         <ul>
-             <li>Cougar</li>
-             <li>Gigabyte</li>
-             <li>Corsair</li>
-             <li>Red Dragon</li>
-             <li>Thermaltake</li>
-         </ul>
-         <li class="texto--gabinetes">Gabinetes</li>
-         <ul>
-             <li>Gigabyte</li>
-             <li>Deepcool</li>
-             <li>Corsair</li>
-             <li>Thermaltake</li>
-         </ul>
-      </ul>
-    </div>
-    <div class="imagenes--componentes">
-        <div class="procesadori3--galeria">
-            <img src="assets/i3_ejemplo.png"
-            alt="procesadorI3" class="procesadori3--logo" >
-        </div>
-        <div class="procesadori5--galeria">
-            <img src="assets/i5_ejemplo.png" alt="procesadorI5" class="procesadori5--logo" >
-        </div>   
-        <div class="procesadori5--galeria">
-            <img src="assets/i5_10thgen_ejemplo.png" alt="procesadorI5 10th gen" class="procesadori5--logo">
-        </div> 
-           <div class="procesadori7--galeria">
-               <img src="assets/i7_ejemplo.png" alt="procesadorI7" class="procesadori7--logo">
-           </div>
-           <div class="procesadori7--galeria">
-            <img src="assets/i7_10thgen_ejemplo.png" alt="procesadorI7 10th gen" class="procesadori7--logo">
-        </div>
-           <div class="procesadori9--galeria">
-               <img src="assets/i9_ejemplo.png" alt="procesadorI9" class="procesadori9--logo">
-           </div>
-           <div class="procesadori9--galeria">
-            <img src="assets/i9_10thgen_ejemplo.png" alt="procesadorI9 10th gen" class="procesadori9--logo">
-        </div>
-       </div>
-    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Procesadores
+                    </button>
+                  </h2>
+                </div>        
+                <div id="collapseOne" class="collapse bg--cardbody" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    AMD 
+                  </div>
+                  <div class="card-body">
+                    Intel 
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Placas de video
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse bg--cardbody" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    GeForce
+                  </div>
+                  <div class="card-body">
+                    AMD
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Motherboards
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse bg--cardbody" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Intel
+                  </div>
+                  <div class="card-body">
+                    AMD
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Memorias RAM
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse bg--cardbody" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Kingston FURY
+                  </div>
+                  <div class="card-body">
+                    Ballistix
+                  </div>
+                  <div class="card-body">
+                    Corsair
+                  </div>
+                  <div class="card-body">
+                    Crucial
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Discos SSD
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse bg--cardbody" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Gigabyte
+                  </div>
+                  <div class="card-body">
+                    Kingston
+                  </div>
+                  <div class="card-body">
+                    Western Digital
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Discos Rigidos
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSix" class="collapse bg--cardbody" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Western Digital
+                  </div>
+                  <div class="card-body">
+                    Seagate
+                  </div>
+                  <div class="card-body">
+                    Toshiba
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      Fuentes de Alimentación
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSeven" class="collapse bg--cardbody" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Cougar
+                  </div>
+                  <div class="card-body">
+                    Gigabyte
+                  </div>
+                  <div class="card-body">
+                    Corsair
+                  </div>
+                  <div class="card-body">
+                    Redragon
+                  </div>
+                  <div class="card-body">
+                    Thermaltake
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <h2 class="mb-0">
+                    <button class="btn btn-color btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      Gabinetes
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseEight" class="collapse bg--cardbody" aria-labelledby="headingEight" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Gigabyte
+                  </div>
+                  <div class="card-body">
+                    Deepcool
+                  </div>
+                  <div class="card-body">
+                    Corsair
+                  </div>
+                  <div class="card-body">
+                    Thermaltake
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imagenes--componentes">
+            <div class="procesadori3--galeria">
+                <img class="procesadori3" src="assets/i3_ejemplo.png"
+                alt="procesadorI3">
+            </div>
+            <div class="procesadori5--galeria">
+                <img class="procesadori5" src="assets/i5_ejemplo.png" alt="procesadorI5">
+            </div>   
+            <div class="procesadori5--galeria">
+                <img class="procesadori5" src="assets/i5_10thgen_ejemplo.png" alt="procesadorI5 10th gen">
+            </div> 
+               <div class="procesadori7--galeria">
+                   <img class="procesadori7" src="assets/i7_ejemplo.png" alt="procesadorI7">
+               </div>
+               <div class="procesadori7--galeria">
+                <img class="procesadori7" src="assets/i7_10thgen_ejemplo.png" alt="procesadorI7 10th gen">
+            </div>
+               <div class="procesadori9--galeria">
+                   <img class="procesadori9" src="assets/i9_ejemplo.png" alt="procesadorI9">
+               </div>
+               <div class="procesadori9--galeria">
+                <img class="procesadori9" src="assets/i9_10thgen_ejemplo.png" alt="procesadorI9 10th gen">
+            </div>
+        </div>     
+      </div>
+      </div>
  </section>
 </main>
 <footer>
@@ -137,5 +276,8 @@
           </h4>
       </div>
 </footer>
+<!-- scripts de bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
