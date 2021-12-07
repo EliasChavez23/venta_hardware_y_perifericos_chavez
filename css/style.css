@@ -321,6 +321,10 @@ a:hover{
 .btn-color{
     color: #000;
 }
+.btn:focus{
+    box-shadow: none;
+}
+
 .btn-color:hover{
     text-shadow: 1px 1px #9370d8;
 }
@@ -330,7 +334,7 @@ a:hover{
 .bg--cardbody{
     background-color: #9ae3b3;
 }
-.col-sm-4{
+.col-sm-3{
     padding-top: 40px;
     padding-left: 25px;
 }
@@ -396,7 +400,7 @@ a:hover{
 /* INICIO GRID IMAGENES DE PRODUCTO SELECCIONADO */
 .imagenes--componentes{
     display: grid;
-    grid-template-columns: 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px 150px 150px 150px;
     gap: 50px;
     padding: 30px;
